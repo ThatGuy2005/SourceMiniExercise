@@ -4,7 +4,7 @@ package com.mycompany.sourceminiexercise;
 import java.util.ArrayList;
 import java.util.List;
 
-public class RSSSource implements Source<Object> {
+public class RSSSource implements Source {
     public RSSSource(String url) throws IllegalArgumentException{
         if(isValid(url)) {
             this.url = url;
@@ -23,7 +23,7 @@ public class RSSSource implements Source<Object> {
     }
     
     @Override
-    public List<Object> readSource() {
+    public List readSource() {
         List<Object> results = new ArrayList<Object>();
         if(checkSource()) {
             // Set up connection, get data, parse it

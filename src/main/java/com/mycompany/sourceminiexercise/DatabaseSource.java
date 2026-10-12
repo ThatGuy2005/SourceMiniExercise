@@ -10,7 +10,7 @@ public class DatabaseSource implements Source {
         if(isValid(connectionString)) {
             this.connectionString = connectionString;
         } else {
-            throw new IllegalArgumentException("Invalid url.");
+            throw new IllegalArgumentException("Invalid connection string.");
         }
         // Get name from connection string or add another argument
         if(!isDatabase(connectionString)) {
@@ -29,7 +29,7 @@ public class DatabaseSource implements Source {
     }
     
     @Override
-    public List<Object> readSource() {
+    public List readSource() {
         List<Object> results = new ArrayList<Object>();
         if(checkSource()) {
             // Set up connection, get data, parse it
