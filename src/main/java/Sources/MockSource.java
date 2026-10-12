@@ -1,6 +1,7 @@
 
-package com.mycompany.sourceminiexercise;
+package Sources;
 
+import Sources.Source;
 import java.util.ArrayList;
 import java.util.List;
 

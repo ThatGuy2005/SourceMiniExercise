@@ -1,5 +1,5 @@
 
-package com.mycompany.sourceminiexercise;
+package Sources;
 
 import java.util.List;
 
